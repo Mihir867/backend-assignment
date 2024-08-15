@@ -2,6 +2,8 @@
 
 A RESTful API for a task management system built with TypeScript, Express, PostgreSQL, and Prisma. This API supports user registration, authentication, and CRUD operations for tasks, including filtering and searching capabilities.
 
+You can find the link to docker image file here at -  https://hub.docker.com/r/mihir867/backend-system
+
 ## Features
 
 - **User Registration and Authentication**
