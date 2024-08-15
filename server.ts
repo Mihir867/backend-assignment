@@ -12,6 +12,7 @@ const prisma = new PrismaClient();
 app.use(cors());
 app.use(express.json());
 
+
 // User Registration
 app.post('/api/register', async (req, res) => {
     const { username, password } = req.body;
@@ -96,7 +97,7 @@ app.get('/api/tasks/filter', async (req, res) => {
     });
     res.json(tasks);
   });
-  
+
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
