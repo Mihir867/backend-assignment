@@ -13,18 +13,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model User {
-  id       Int      @id @default(autoincrement())
-  username String   @unique
-  password String
-  tasks    Task[]
+  id        Int    @id @default(autoincrement())
+  username  String @unique
+  password  String
+  tasks     Task[]
 }
 
 model Task {
   id          Int      @id @default(autoincrement())
   title       String
-  description String?
+  description String
   status      String
   priority    String
   due_date    DateTime

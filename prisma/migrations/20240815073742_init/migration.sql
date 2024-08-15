@@ -11,7 +11,7 @@ CREATE TABLE "User" (
 CREATE TABLE "Task" (
     "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
-    "description" TEXT,
+    "description" TEXT NOT NULL,
     "status" TEXT NOT NULL,
     "priority" TEXT NOT NULL,
     "due_date" TIMESTAMP(3) NOT NULL,
